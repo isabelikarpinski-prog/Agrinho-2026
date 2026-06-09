@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Isabeli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agrinho<span>Sustentável</span></div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">O Conceito</a>
+            <a href="#pilares">Pilares</a>
+            <a href="#calculadora">Simulador</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class=img01.jpg>
+        <div class=img01.jpg>
+            <h1>Isabeli</h1>
+            <p>O equilíbrio perfeito entre a alta produção agrícola e a preservação do meio ambiente.</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <h2>O Desafio do Século XXI</h2>
+        <p>Alimentar uma população mundial em crescimento exige eficiência e força no campo. Porém, o futuro só existe se protegermos nossos recursos naturais. O agro moderno usa a tecnologia para produzir mais, utilizando menos terra, menos água e reduzindo a emissão de carbono.</p>
+    </section>
+
+    <section id="pilares" class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Como Alcançar o Equilíbrio?</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Tecnologia de Precisão</h3>
+                    <p>Uso de drones, sensores e GPS para aplicar água e fertilizantes apenas onde é necessário, evitando desperdícios.</p>
+                </div>
+                <div class="card">
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar as espécies plantadas na mesma área para manter o solo rico em nutrientes sem precisar de químicos em excesso.</p>
+                </div>
+                <div class="card">
+                    <h3>Energia Limpa</h3>
+                    <p>Fazendas que utilizam energia solar e biomassa para mover suas máquinas e irrigação de forma sustentável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="container">
+        <h2>Simulador de Impacto Sustentável</h2>
+        <p>Escolha uma prática sustentável abaixo para ver o impacto positivo estimado na sua produção:</p>
+        
+        <div class="simulador-box">
+            <label for="pratica">Selecione uma ação:</label>
+            <select id="pratica">
+                <option value="drones">Adotar Drones e Sensores</option>
+                <option value="plantio">Fazer Plantio Direto (Sem arar)</option>
+                <option value="solar">Instalar Energia Solar no Campo</option>
+            </select>
+            <button onclick="calcularImpacto()" class="btn">Simular Resultado</button>
+
+            <div id="resultado" class="resultado-box" style="display: none;">
+                <h3>Resultado Estimado:</h3>
+                <p id="texto-resultado"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Criado com HTML, CSS e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
